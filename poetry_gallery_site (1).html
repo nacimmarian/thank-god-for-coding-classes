@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank God For Coding Classes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #444;
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 2rem;
+      color: #bbb;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .poem-card {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .poem-card:hover {
+      transform: translateY(-5px);
+    }
+    .poem-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #e3b76b;
+    }
+    .poem-body {
+      font-size: 1rem;
+      white-space: pre-wrap;
+    }
+    .contact {
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-top: 1px solid #444;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input,
+    .contact textarea {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #2a2a2a;
+      color: #f1f1f1;
+    }
+    .contact button {
+      padding: 0.75rem;
+      background-color: #e3b76b;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .contact button:hover {
+      background-color: #d1a556;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>Thank God For Coding Classes</header>
+  <div class="quote">"Never sugar on a spoon, always honey on a knife."</div>
+
+  <section class="gallery">
+    <!-- Add your poems below by copying the .poem-card block -->
+    <div class="poem-card">
+      <div class="poem-title">Loving You</div>
+      <div class="poem-body">
+Loving you is like instinct.
+I am overwhelmed by how easy it is to love you.
+Like breathing: natural, necessary.
+And it terrifies me
+that everyone else might see you
+the way I pray only I do.
+      </div>
+    </div>
+    <div class="poem-card">
+      <div class="poem-title">Tell Me You Want Me</div>
+      <div class="poem-body">
+Am I being good, baby?
+Is it sweet like sugar on your tongue?
+Am I everything you fuck and forget,
+Or the one you would crawl for?
+      </div>
+    </div>
+    <!-- Copy and paste more .poem-card blocks here -->
+  </section>
+
+  <section class="contact">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Contact Me</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name — Poet. All rights reserved.
+  </footer>
+</body>
+</html>
